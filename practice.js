@@ -16,8 +16,11 @@
 
 //Code here
 
-
-
+let me = {
+  name: "josh",
+  age: 30,
+}
+alert(me.name);
 ////////// PROBLEM 2 //////////
 
 /*
@@ -27,6 +30,14 @@
 
 //Code here
 
+let favoriteThings = {
+  band: "ColdPlay",
+  food: "Pizza",
+  person: "Annie",
+  book: "the Hobbit",
+  movie: "The Thin Red Line",
+  holiday: "Halloween"
+}
 
 
 /*
@@ -35,7 +46,8 @@
 
 //Code here
 
-
+favoriteThings.car = "Tesla";
+favoriteThings.brand = "Google";
 
 /*
   Now change the value of the food key in your favoriteThings object to be 'Chicken Nuggets' and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
@@ -43,7 +55,8 @@
 
 //Code here
 
-
+favoriteThings.food = 'Chicken Nuggets';
+favoriteThings.book = 'Harry Potter';
 
 ////////// PROBLEM 3 //////////
 
@@ -57,7 +70,13 @@
 
 //Code here
 
+let backPack = {
+  
+}
+let item = 'firstPocket';
 
+backPack[item] = 'chapstick'; 
+backPack.color = 'grey';
 
 /*
   After you do the above, alert your entire backPack object.
@@ -65,7 +84,7 @@
 
 //Code here
 
-
+alert(backPack);
 
 /*
 You probably noticed that it just alerted [object Object].
@@ -75,7 +94,7 @@ Instead, console.log your whole backPack object and then check out the console.
 
 //Code here
 
-
+console.log(backPack);
 
 ////////// PROBLEM 4 //////////
 
@@ -98,6 +117,9 @@ var user2 = {
 
 //Code Here
 
+user2.name = 'Tyler S. McGinnis';
+user2.email = 'tyler.mcginnis@devmounta.in';
+
 
 
 ////////// EXTRA PRACTICE PROBLEMS BELOW //////////
@@ -110,6 +132,8 @@ var user2 = {
 
 //Code Here
 
+let methodCollection = {};
+
 
 
 /*
@@ -118,8 +142,12 @@ var user2 = {
 */
 
 //Code Here
-
-
+methodCollection.alertHello = function(){
+  alert('hello');
+};
+methodCollection.logHello = function(){
+  console.log('hello')
+};
 
 /*
   Now call your alertHello and logHello methods.
@@ -127,7 +155,8 @@ var user2 = {
 
 //Code Here
 
-
+methodCollection.alertHello();
+methodCollection.logHello();
 
 ////////// PROBLEM 6 //////////
 
@@ -138,7 +167,13 @@ var user2 = {
 
 //Code Here
 
-
+function makePerson(name, birthday, ssn){
+  return obj = {
+    name,
+    birthday,
+    ssn
+  }
+}
 
 ////////// PROBLEM 7 //////////
 
@@ -149,4 +184,11 @@ var user2 = {
 
 //Code Here
 
-
+function makeCard(cardNumber, expirationDate, securityCode){
+  var creditCard = {
+      cardNumber,
+      expirationDate,
+      securityCode
+  }
+  return creditCard;
+}
